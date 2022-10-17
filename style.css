@@ -1,0 +1,653 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 ;
+  padding: 0 ; 
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+    background-color: azure;
+    background-image: url('https://images.pexels.com/photos/933054/pexels-photo-933054.jpeg?cs=srgb&dl=pexels-joyston-judah-933054.jpg&fm=jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-x: hidden;
+    
+}
+header {
+    background-color: #cccccc;
+    width: 100%;
+    min-width: 4.3em;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6em 5.7em;
+}
+.make h3 {
+    color: aliceblue;
+    position: absolute;
+    margin-left: 50.6em;
+    bottom: -2.5em;
+    font-weight: 900;
+    font-size: 1.3em;
+    text-shadow: 0.06em 0.06em #000000;
+}
+.logo {
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: blue;
+    letter-spacing: 0.12em;
+    font-weight: 870;
+    font-size: 1.8em sans-serif;
+    text-shadow: 0.06em 0.06em #000000;
+    animation: go 7s ease-in-out infinite;
+    transform: scale(1.1);
+}
+@keyframes go {
+    0% {color:black;}
+    25% {color: blue;}
+    50% {color: green;}
+    100% {color: red;}
+}
+.navigate a{
+    color: hsl(0, 50%, 52%);
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    padding-left: 0.7em;
+    margin: 1em;
+    transition: all 0.7s ease-in-out;
+}
+.navigate a:hover {
+    color:blue ;
+    transform: scale(1.1);
+}
+.laptop {
+    min-width: 111vw;
+    height: 50vh;
+    image-rendering: auto;
+}
+/*.main {
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    background-position: center;
+    margin-left: 0.9em;
+}*/
+.main span{
+    color: darkgray;
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-top: 0.6em;
+    text-shadow: 0.06em 0.06em #000000;
+}
+.main  span {
+    color:hwb(25 0% 0%);
+    display: inline-block;
+    margin-top: 0.3em;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-shadow: 0.17em 0.17em #000000;
+}
+.name {
+    font-weight: 700;
+    color: #ad3d3d;
+    margin-left: 9em;
+    margin-top: 1em;
+    text-shadow: 0.12em 0.12em #000000;
+    animation:come 7s ease-in-out infinite ;
+    transform:scale(1.1) ;
+}
+@keyframes come {
+    0% {color: aliceblue;}
+    25% {color: #ad3d3d;}
+    50% {color: yellow;}
+    100% {color: aqua;}
+}
+.main-btn{
+    text-decoration: none;
+    color: #000000;
+    margin-top: 1.6em;
+    margin-left: 11.3em;
+    background-color: whitesmoke;
+    font-size: 0.9em;
+    font-weight: 100;
+    display: inline-block;
+    padding: 0.9376em 2.1875;
+    border-radius: 0.3em;
+    border: 1px solid black;
+    padding: 0em 0.3em;
+    letter-spacing: 0.0125em;
+    transition: all 0.7s ease-in-out;
+}
+.main-btn:hover {
+	transform: scale(1.1);
+    background-color: lightskyblue;
+}
+.main p {
+    margin-left: 10.6em;
+    margin-top: 1.8em;
+    padding: 0.1em;
+    background-color: white;
+    width: 9.3em;
+    border-radius: 0.3em;
+    text-align: center;
+    font-weight: bold;
+    animation: win 7s ease-in-out infinite;
+    transform: scale(1.1);
+}
+@keyframes win {
+    0% {color: hwb(0 15% 19%);}
+    25% {color: blue;}
+    50% {color: green;}
+    75% {background-color: hsl(175, 38%, 72%);}
+    100% {color: black;}
+}
+.social-icons  {
+    font-weight: 600;
+    margin-top: 1em;
+    margin-left: 5.2em;
+    border-radius: 0.9em;
+    color: white;
+    font-size: 1.8em;
+    padding: 0em 0.5em;
+    transition:all  7s ease-in-out;
+}
+.social-icons :hover {
+    transform: scale(1.1);
+}
+.field {
+    width: 32%;
+    height: 29em;
+    margin-left: 43.5em;
+    top: 38em;
+    position: absolute;
+    border-radius: 50%;
+}
+.back h3  {
+    margin-left: 37em;
+    top: 49.7em;
+    position: absolute;
+    color: #f81212;
+    font-size: 1.4em;
+}
+.back p {
+    width: 25em;
+    margin-left: 44em;
+    top: 73em;
+    position: absolute;
+    background-color: lightgray;
+    padding: 2.3em 1.1em;
+    text-align: justify;
+    justify-content: center;
+    border-radius: 0.6em;
+}
+.back  span {
+    left: 8em;
+    position: absolute;
+    top: 1em;
+    font-size: 1.2em;
+    font-weight: 900;
+    color: darkgreen;
+}
+.box {
+    background-color: lightgray;
+    width: 21.25em;
+    box-shadow: 0.5px 25px rbga(111/15px);
+    border-radius: 0.6em;
+    margin-left: 5.6em;
+    margin-top: 2em;
+    padding: 2em;
+}
+.box h3{
+    margin-left: 4em;
+    margin-top: -1.5em;
+}
+    .box h3 span{
+        font-size: 1.2em;
+        font-weight: 400;
+        text-shadow: 0.11em 0.030em  black;
+        color: orange;
+        margin-left: -2%;
+        width: 12.5em;
+        padding-top: 0.31em;
+        padding: 0.12em 0.18em;
+        background-color: rgb(205, 194, 194);
+        border-radius: 0.9em;
+        letter-spacing: 0.06em;
+}
+    .move {
+        position: relative;
+        left: 5em;
+    }
+    .will {
+        position: relative;
+        left: 5em;
+    }
+    .title {
+        font-size: 1.5em;
+        font-weight: 700;
+        margin-left: 8em;
+        color: #e81414;
+        margin-top: 1em;
+    }
+    .job {
+        position: relative;
+        left: 5em;
+    }
+    .act  {
+        margin-left: 5.5em;
+        margin-top: 1.8em;
+        background-color:lightgray ;
+        width: 21.25em;
+        padding: 1em;
+        text-align: justify;
+        border-radius: 1em;
+        transition: 0.7s ease-in-out;
+}
+    .act:hover {
+        transform: scale(1.1);
+}
+
+    .act h3 span{
+        margin-left: 6.3em;
+        margin-top: -1em;
+        color: hsl(243, 84%, 32%);
+        text-shadow: 0.06em 0.06em #000000 ;
+        letter-spacing: 0.18em;
+        padding: 0.06em 0,9em;
+        border-radius: 0.3em;
+        background-color: rgb(192, 192, 243);
+}
+    .now {
+        position: relative;
+        left: 5em;
+    }
+    
+    .now h4 {
+       margin-left: 7.8em;
+       margin-bottom: 0.6em;
+       color: hsl(0, 89%, 46%);
+       font-weight: 900;
+       font-size: 1.5em;
+       position: relative;
+       text-shadow: 0.06em 0.06em #000000;
+       margin-top: 1.2em;
+    }
+    .work {
+        background-color: lightgray;
+        width: 21.25em;
+        padding: 1.2em;
+        border-radius: 1em;
+        margin-top: 1.6em;
+        margin-left: 5.6em;
+        transition: 0.7s ease-in-out;
+}
+    .work h3 {
+        color: #f09e06;
+        margin-left: 3em;
+        margin-bottom: 0.6em;
+        width: 10.6em;
+        text-align: center;
+        padding: 0.06em ;
+        text-shadow: 0.06em 0.06em #000000;
+        font-size: 1.2em;
+        font-weight: 700;
+        border-radius: 0.9em;
+        background-color: bisque;
+}
+    .work:hover {
+        transform: scale(1.1);
+    }
+    .work p{
+    text-align: justify;
+    }
+    .work,h3, p {
+        margin-bottom: 0.3em;
+    }
+    .got {
+        margin-left: 8em;
+        color: hwb(0 12% 15%);
+        text-shadow: 0.06em 0.06em #000000;
+        font-size: 1.5em;
+        font-weight: 900;
+}
+
+.ya {
+    color: hwb(0 11% 14%);
+    margin-left: 7.5em;
+    margin-top: 0.5em;
+    float: left;
+}
+.ya h2 {
+    margin-left: 3em;
+    font-size: 1.4em;
+}
+.ya span {
+    margin-left: 5.6em;
+    color: #618d1e;
+}
+.ya span {
+    padding-left: 0.3em;
+    padding-bottom: 0.4em;
+}
+.here {
+    background-color: lightgray;
+    padding: 1.3em ;
+    width: 21.25em;
+    text-align: center;
+    margin-left: 5.6em;
+    text-align: center;
+    top: 0.5em;
+    height: 11em;
+    border-radius: 0.6em;
+    transition:0.7s ease-in-out;
+}
+.here:hover {
+    transform: scale(1.1);
+}
+.star  {
+    margin-top: 1em;
+    position: relative;
+    color: #f11111;
+    left: 7em;
+}
+.star span {
+    position: relative;
+    top: 1.3em;
+    color: white;
+    left: -7.9em;
+    font-weight: 100;
+    font-size: 0.6em;
+}
+.here p{
+    color: black;
+    text-align: justify;
+}
+.here h3 {
+    margin-left: 1.9em;
+    position: relative;
+    bottom: .3em;
+    color: green;
+    text-shadow: 0.09em 0.09em #000000;
+    width: 11.2em;
+    text-align: center;
+    padding: 0em 0.06em;
+    border-radius:28%;
+    background-color: hsl(83, 34%, 74%);
+}
+
+.resume {
+    margin-left: 9.5rem;
+    position: absolute;
+    top: 48rem;
+    width: 10rem;
+    text-justify: auto;
+    
+}
+.resume p {
+    position: absolute;
+    margin-left: 31.2em;
+    background-color: lightgray;
+    padding: 1em;
+    margin-top: -6.5em;
+    border-radius: 0.6em;
+    transition: 0.7s ease-in-out;
+}
+.resume p:hover {
+    transform: scale(1.1);
+}
+.resume h3 {
+    bottom: -27em;
+    margin-top: 1em;
+    position: absolute;
+    margin-left: 30em;
+    text-align: center;
+    color: hwb(0 11% 14%);
+    font-size: 1.4em;
+    letter-spacing: 0.1em;
+    }
+    .address {
+        top: 4em;
+        position: relative;
+        background-color: lightgray;
+        text-align: center;
+        width: 21.25em;
+        padding: 1.1em;
+        left: 10.6em;
+        border-radius: 0.6em;
+        transition: 0.7s ease-in-out;
+}
+.address:hover {
+    transform: scale(1.1);
+}
+.address span {
+    color: black;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    margin-left: 1.8em;
+}
+.address p {
+    margin-left: -1.5em;
+    position: relative;
+    min-height: 0.1em;
+}
+@media screen and  (max-width: 320px)
+  {
+    html {height: 100%;}
+    body {min-height: 100%;}
+    header {
+        display: block;
+        padding: 0.2em;
+        flex-direction: column;
+    }
+    .logo{
+        left: 13em;
+        position: relative;
+        font-weight: 600;
+        font-size: 0.7em;
+        top: 0.2em;
+    }
+        .navigate a{
+            align-items: center;
+            font-weight: 600;
+            font-size: 0.7em;
+            top: -0.1em;
+            left: 5em;
+            position: relative;
+        }
+        .laptop {
+            width: 90%;
+            height: 7em;
+            top: 2.8em;
+            position: relative;
+        }
+        .name {
+            font-size: 0.9em;
+            font-weight: 800;
+            left: -3.7em;
+            top: 3em;
+            position: relative;
+        }
+        .name span {
+            font-size: 0.1;
+            font-weight: 700;
+        }
+        .main-btn {
+            font-size: 0.8em;
+            font-weight: bold;
+            left: -6em;
+            top: 5em;
+            position: relative;
+        }
+        .main p {
+            position: relative;
+            font-size: 0.7em;
+            left: -1.6em;
+            font-size: 0.7em;
+            top: 7em;
+        }
+        .social-icons {
+            position: relative;
+            font-size: 1.4em;
+            left: -1em;
+            top: 4em;
+        }
+        .job {
+            margin-left: -3.4em;
+        }
+        .now {
+            position: relative;
+            left: 1em;
+            top: 47.4em;
+        }
+        .move {
+            position: relative;
+            left: -1em;
+            top: 26em;
+        }
+        .got {
+            font-size: 1.1em;
+            font-weight: 600;
+            margin-top: -37.5em;
+            margin-left: 8.8em;
+        }
+        .box h3 span {
+            font-size: 0.8em;
+            font-weight: 600;
+        }
+        .box {
+            padding: 1em 0.5em;
+            width: 17em;
+            position: relative;
+            left: -3em;
+            top: 1em;
+        }
+        .box p {
+            font-size: 0.7em;
+            font-weight: 500;
+            align-items: center;
+            text-align: center;
+        }
+        .act  {
+            position: relative;
+            font-size: 0.7em;
+            margin-left: 6.8em;
+        }
+        .now h4 {
+            font-size: 1em;
+            font-weight: 800;
+            margin-left: 7em;
+        }
+        .work {
+            font-size: 0.7em;
+            margin-left: 6.8em;
+            width: 25em;
+            position: relative;
+            margin-left: 0.4em;
+        }
+        .work h3 {
+            position: relative;
+            margin-left: 4em;
+        }
+        .title {
+            position: relative;
+             font-size: 1em;
+            font-weight: 900;
+            color: rgba(255, 15, 15, 0.973);
+            top: 1.8em;
+            left: -1em;
+        }
+        .card {
+            width: 14.75em;
+            margin-left: 4.8em;
+            padding:1em ;
+            position: relative;
+            height: 8em;
+        }
+        .info p {
+            font-size: 0.7em;
+            
+        }
+        .info h3 span {
+            font-size: 0.7em;
+        }
+        .address {
+            top: 51em;
+            font-size: 0.8em;
+            position: relative;
+            left: 1.8em;
+        }
+        .here h2  {
+            font-size: 0.7em;
+            bottom: 3.9em;
+            position: relative;
+            left: 3em;
+            color: #ef1111;
+            font-weight: 900;
+        }
+        .will {
+            position: relative;
+            top: 33em;
+            left: -3.5em;
+        }
+        .star {
+            left: 10em;
+            font-size: 1em;
+            font-weight: 900;
+            position: relative;
+            top: 5em;
+        }
+        .here span {
+            bottom: 4em;
+            left: 4em;
+            position: relative;
+            color: white;
+        }
+        .here {
+            width: 25em;
+            height: 11em;
+            position: relative;
+            left: 1em;
+            top: 7.6em;
+            font-size: 0.7em;
+            text-align: justify;
+        }
+        .here h3 {
+            font-size: 1.2em;
+            font-weight: 900;
+            bottom: 0.3em;
+            position: relative;
+            left: 2em;
+        }
+        .here p {
+            top: 0.6em;
+            position: relative;
+            left: 2.4em;
+        }
+        .star span {
+            position: relative;
+            font-size: 0.9em;
+            left: -7em;
+        }
+        .field {
+            margin-left: 2em;
+            border-radius: 50%;
+            height: 12em;
+            width: 16.5em;
+            border-radius: 50%;
+            top: 72em;
+        }
+        .back h3 {
+             margin-left: 6em;
+             top: 77em;
+             font-size: 1.1em;
+        }
+        .back p {
+            margin-left: 2em;
+            top: 125em;
+            width: 25em;
+            font-size: 0.7em;
+        }
+    }
